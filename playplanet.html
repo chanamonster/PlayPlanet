@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024, height=768, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no" /> <!--android disabler -->
+  <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0" /> <!-- ios disabler -->
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" /> <!-- chrome disabler -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>PlayPlanet</title>
+
+  <script type="text/javascript" src="javascripts-cap/jquery-1.10.2.min.js" ></script>
+  <script type="text/javascript" src="javascripts-cap/planets.js" ></script>
+  <script type="text/javascript" src="javascripts-cap/shake.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets-cap/p-style.css" />
+<link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- <div id="audio">
+    <audio id="britney" src="sounds/britney.mp3" preload="auto"></audio>
+    <audio id="sunrise" src="sounds/The_Circle_Of_Life.mp3" preload="auto"></audio>
+  </div> -->
+
+  <div class="title">
+    <table id="table">
+      <tr>
+        <td><img id="icon-coral" src="images-cap//icon-coral.png" width="130px"><br> Coral Reef</td>
+        <td><img id="icon-desert" src="images-cap//icon-desert.png" width="130px"><br>Desert</td>
+        <td><img id="icon-space" src="images-cap//icon-space.png" width="130px"><br>Outer Space</td>
+      </tr>
+      <tr>
+        <td><img id="icon-grassland" src="images-cap//icon-grassland.png" width="130px"><br>Grasslands</td>
+        <td><img id="icon-arctic" src="images-cap//icon-antarctic.png" width="130px"><br>Antarctic Tundra</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="coral">
+    <div id="scenery-coral">
+      <div id="coralwhat">
+        <img src="images-cap/coral/coralreef-bkgd.gif">
+      </div>
+      <div id="coral2">
+        <img src="images-cap/coral/whale.gif" width="500px">
+      </div>
+      <div id="coral4">
+        <img src="images-cap/coral/bubbles.gif">
+      </div>
+      <div id="coral1">
+        <img src="images-cap/coral/coralreef-frgd.gif">
+      </div>
+      <div id="coral3">
+        <img id="school" src="images-cap/coral/fishL.png">
+      </div>
+    </div> <!-- closing scenery-coral -->
+  </div> <!-- closing coral -->
+
+  <div class="grassland">
+    <div id="scenery-grass">
+      <div id="grass1">
+        <img src="images-cap//grassland/grassland-bkgd.png">
+      </div>
+      <div id="grass2">
+        <img src="images-cap//grassland/sunset.gif">
+      </div>
+      <div id="grass3">
+        <img src="images-cap//grassland/sunrise.gif">
+      </div>
+      <div id="grass4">
+        <img src="images-cap//grassland/elephant.gif">
+      </div>
+      <div id="grass5">
+        <img src="images-cap//grassland/giraffe.png">
+      </div>
+      <div id="grass6">
+        <img src="images-cap//grassland/meerkats.gif">
+      </div>
+      <div id="grass7">
+        <img src="images-cap//grassland/grass.gif">
+      </div>
+    </div> <!-- closing scenery-grassland -->
+  </div> <!-- closing grassland -->
+
+  <div class="antarctic">
+    <div id="scenery-ice">
+      <div id="ice1">
+        <img src="images-cap//antarctic/antarctic-bkgd.gif">
+      </div>
+      <div id="ice5">
+        <img src="images-cap//antarctic/orca.gif">
+      </div>
+      <div id="ice2">
+        <img src="images-cap//antarctic/antarctic-frgd.png">
+      </div>
+      <div id="ice3">
+        <img src="images-cap//antarctic/slidingPenguin.gif">
+      </div>
+      <div id="ice4">
+        <img src="images-cap//antarctic/penguin.gif">
+      </div>
+      <div id="ice6"> <!-- left 1 -->
+        <img src="images-cap//antarctic/sealL.gif">
+      </div>
+      <div id="ice7"> <!-- left 2 -->
+        <img src="images-cap//antarctic/sealL.gif">
+      </div>
+      <div id="ice8"> <!-- right 1 -->
+        <img src="images-cap//antarctic/sealR.gif">
+      </div>
+      <div id="ice9"> <!-- right 2 -->
+        <img src="images-cap//antarctic/sealR.gif">
+      </div>
+      <div id="ice10">
+        <img src="images-cap//antarctic/snow.gif">
+      </div>
+    </div> <!-- closing scenery-ice -->
+  </div> <!-- closing antarctic -->
+
+  <div class="space">
+    <div id="scenery-space">
+      <div id="space1">
+        <img src="images-cap//space/space-bkgd.gif">
+      </div>
+      <div id="space2">
+        <img src="images-cap//space/alien.png">
+      </div>
+      <div id="space3">
+        <img src="images-cap//space/meteor.gif">
+      </div>
+      </div>
+    </div> <!-- closing scenery-ice -->
+  </div> <!-- closing antarctic -->
+
+  <div class="desert">
+    <div id="scenery-desert">
+      <div id="desert1">
+        <img src="images-cap//desert/desert-bkgd.png">
+      </div>
+      <div id="desert2">
+        <img src="images-cap//desert/desert-frgd.gif">
+      </div>
+      <div id="desert3">
+        <img src="images-cap//desert/tumbleweed.gif">
+      </div>
+      <div id="desert4">
+        <img src="images-cap//desert/vulture1.gif">
+      </div>
+      <div id="desert5">
+        <img src="images-cap//desert/tornado.gif">
+      </div>
+    </div> <!-- closing scenery-ice -->
+  </div> <!-- closing antarctic -->
+
+  <div id="globe"><img src="images-cap//globe.png" width="50px"></div>
+  
+
+  <script type="text/javascript">
+    
+  </script>
+  
+  
+
+</body>
+</html>

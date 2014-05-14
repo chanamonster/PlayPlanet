@@ -1,0 +1,351 @@
+html{
+  overflow: hidden;
+  min-width: 1024px;
+  min-height: 768px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 30px;
+  background: #b11f24;
+  /*background: white;*/
+  /*max-width: 1024px;
+  max-height: 768px;*/
+  overflow: hidden;
+  margin: 0px;
+}
+
+.title{
+  background-image: url('../images-cap/titleimg.png');
+  background-size: 1024 672;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+table{
+  width: 750px;
+  height: 350px;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 170px;
+  color: white;
+  font-family: 'Lemon', cursive;
+  font-size: 13px;
+  text-align: center;
+}
+
+#globe{
+  width: 30px;
+  /*margin: 10px;*/
+  /*margin-top: 570px;*/
+  /*display: block;*/
+  /*margin-top: 630px;*/
+  /*margin-left: 924px;*/
+  /*margin-top: 600px;*/
+  /*float: right;*/
+  position: absolute;
+  display: none;
+  top: 570px;
+  left: 10px;
+  bottom: 0px;
+}
+
+.all1, .all2, .all3, .coral, .grassland{
+  /*width: 450px;*/
+  top: 0;
+  left: 0;
+  /*position: relative;*/
+  /*width: 100%;
+  height: 100%;*/
+  min-width: 1024px;
+  min-height: 672px;
+}
+
+.all1, .all2, .all3{ /*, .coral{*/
+  display: none;
+}
+  
+.main {
+  /*border: 1px solid black;*/
+  /*box-shadow: 10px 10px 5px #888;*/
+  /*border-radius: 12px;*/
+  /*padding: 20px;*/
+  /*background-color: #ddd;*/
+  /*margin: 25px;*/
+  /*width: 550px;*/
+  margin-left:auto;
+  margin-right:auto;
+  /*display: none; */
+}
+
+.logo {
+  width:275px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 15px;
+}
+
+.container {
+  -webkit-perspective: 300; perspective: 300;
+  height: 500px;
+  margin-top: 50px;
+}
+
+#ball, #ball3, #ball4{
+  margin-top: 50px;
+  /*margin-left: 200px;*/
+  width: 10%;
+  /*float: left;*/
+  position: absolute;
+  /*bottom: 0;*/
+  top: 510px;
+  /*margin-left: 11px;*/
+}
+
+#ball img{
+  width: 100%;
+}
+
+#item{
+  /*float: left;*/
+  /*display: inline-block:;*/
+}
+
+#audio{
+  float: left;
+  display: none;
+}
+
+#scenery{
+  height: 100%;
+  width: 100%;
+  background: black;
+  /*position: relative;*/
+  /*top: 0;
+  left: 0;
+  bottom: 0;*/
+}
+
+#b1{
+  background-image: url('../images-cap/b1.png');
+  background-size: 100% 100%;
+  /*position: absolute;*/
+}
+
+#b2{
+  background-image: url('../images-cap/b2.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#b3{
+  background-image: url('../images-cap/b3.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/*#b1, #b2, #b3{
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#b1 img{
+  width: 100%;
+  height: 100%;
+  max-height: 768px;
+}
+
+#b2, #b3, #b2 img, #b3 img{
+  height: 100%;
+  max-height: 768px;
+  top: 0;
+}*/
+
+
+
+#sun img{
+  top: 0;
+  right: 0;
+  float: right;
+  width: 100%;
+  /*height: 100%;*/
+  position: absolute;
+}
+
+
+.all2 img{
+  float: left;
+  position: absolute;
+}
+
+/* CORAL REEF */
+.coral{
+  display: none;
+}
+
+#scenery-coral{
+  background-image: url('../images-cap/coral/coralreef-bkgd.png');
+}
+
+#coral1{
+  /*background-image: url('../images-cap/coral/coralreef-bkgd.png');*/
+  /*background-size: 100% 100%;*/
+  position: absolute;
+}
+
+#coral2{
+  /*background-image: url('../images-cap/coral/coralreef-frgd.gif');*/
+  display: none;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#coral3{
+  /*background-image: url('../images-cap/coral/coralreef-frgd.gif');*/
+  /*display: none;*/
+  background-size: 100% 100%;
+  position: absolute;
+  top: 220px;
+  left: -512px;
+}
+
+#coral4{
+  display: none;
+  /*background-image: url('../images-cap/coral/bubbles.png');*/
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* GRASSLAND */
+.grassland{
+  display: none;
+}
+
+#grass2, #grass3{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#grass4, #grass6, #grass7{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#grass5{
+  position: absolute;
+  top: 0;
+  margin-left: 850px;
+}
+
+#grass6{ /*meerkats*/
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ANTARCTIC */
+.antarctic{
+  display: none;
+}
+
+#ice1, #ice2, #ice3, #ice4, #ice5{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ice3, #ice5{ /*sliding penguin && orca */
+  display: none;
+}
+
+/* seal */
+#ice6, #ice8, #ice10{
+  display: none;
+  position: absolute;
+}
+
+#ice7, #ice9{
+  position: absolute;
+}
+
+#ice7{
+  margin-left: -512px;
+}
+#ice9{
+  margin-left: 512px;
+}
+
+/* SPACE */
+.space{
+  display: none;
+}
+
+#space2, #space3{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#space3{
+  display: none;
+}
+
+/*Desert*/
+.desert{
+  display: none;
+}
+
+#desert1, #desert2, #desert3, #desert4, #desert5{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#desert3, #desert4, #desert5{
+  display: none;
+}
+
+#cityB1{
+  background-image: url('../images-cap/city/cityB1.png');
+  background-size: 100% 100%;
+  /*position: absolute;*/
+}
+
+#cityB2{
+  background-image: url('../images-cap/city/cityB2.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pigeon{
+  margin-top: 50px;
+  /*margin-left: 200px;*/
+  width: 10%;
+  /*float: left;*/
+  position: absolute;
+  /*bottom: 0;*/
+  top: 450px;
+  margin-left: 500px;
+}
